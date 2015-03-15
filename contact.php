@@ -36,7 +36,10 @@
 			return true;
 		}
 	}
-
+	$_POST['name'] = "nathan gortt";
+	$_POST['mail'] = "nmg2225@yahoo.com";
+	$_POST['website'] = "randomWebsite@global.com";
+	$_POST['comment'] = "random comment";
 	//Get post data
 	if(isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['comment'])){
 		$name 	 = $_POST['name'];
