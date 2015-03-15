@@ -3,10 +3,10 @@
 	/* ==========================  Define variables ========================== */
 
 	#Your e-mail address
-	define("__TO__", "NathanGrotticelli@gmail.com");
+	define("__TO__", "nmg2225@yahoo.com");
 
 	#Message subject
-	define("__SUBJECT__", "Test Subj");
+	define("__SUBJECT__", "examples.com = From:");
 
 	#Success message
 	define('__SUCCESS_MESSAGE__', "Your message has been sent. Thank you!");
