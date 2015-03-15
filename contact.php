@@ -20,8 +20,8 @@
 	/* ========================  End Define variables ======================== */
 
 	//Send mail function
-	function send_mail($to,$subject,$message){
-		if(@mail($to,$subject,$message)){
+	function send_mail($to,$subject,$message,$headers){
+		if(mail($to,$subject,$message,$headers)){
 			echo json_encode(array('info' => 'success', 'msg' => __SUCCESS_MESSAGE__));
 		} else {
 			echo json_encode(array('info' => 'error', 'msg' => __ERROR_MESSAGE__));
@@ -85,11 +85,11 @@
 			</html>
 			';
 
-			// $headers  = 'MIME-Version: 1.0' . "\r\n";
-			// $headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-			// $headers .= 'From: ' . $mail . "\r\n";
+			$headers  = 'MIME-Version: 1.0' . "\r\n";
+			$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+			$headers .= 'From: ' . $mail . "\r\n";
 
-			send_mail($to,$subject,$message);
+			send_mail($to,$subject,$message,$headers);
 		}
 	} else {
 		echo json_encode(array('info' => 'error', 'msg' => __MESSAGE_EMPTY_FILDS__));
