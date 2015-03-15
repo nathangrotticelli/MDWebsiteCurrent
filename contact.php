@@ -3,10 +3,10 @@
 	/* ==========================  Define variables ========================== */
 
 	#Your e-mail address
-	define("__TO__", "nathangrotticelli@gmail.com");
+	define("__TO__", "test@test.com");
 
 	#Message subject
-	define("__SUBJECT__", "Hello");
+	define("__SUBJECT__", "");
 
 	#Success message
 	define('__SUCCESS_MESSAGE__', "Your message has been sent. Thank you!");
@@ -21,7 +21,7 @@
 
 	//Send mail function
 	function send_mail($to,$subject,$message,$headers){
-		if(mail($to,$subject,$message,$headers)){
+		if(@mail($to,$subject,$message)){
 			echo json_encode(array('info' => 'success', 'msg' => __SUCCESS_MESSAGE__));
 		} else {
 			echo json_encode(array('info' => 'error', 'msg' => __ERROR_MESSAGE__));
@@ -36,15 +36,6 @@
 			return true;
 		}
 	}
-
-	// The message
-$message = "Line 1\r\nLine 2\r\nLine 3";
-
-// In case any of our lines are larger than 70 characters, we should use wordwrap()
-$message = wordwrap($message, 70, "\r\n");
-
-// Send
-mail('nathangrotticelli@gmail.com', 'My Subject', $message);
 
 	//Get post data
 	if(isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['comment'])){
