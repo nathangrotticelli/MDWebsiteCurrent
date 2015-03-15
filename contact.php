@@ -3,10 +3,10 @@
 	/* ==========================  Define variables ========================== */
 
 	#Your e-mail address
-	define("__TO__", "test@test.com");
+	define("__TO__", "nmg2225@yahoo.com");
 
 	#Message subject
-	define("__SUBJECT__", "");
+	define("__SUBJECT__", "geyyyyy");
 
 	#Success message
 	define('__SUCCESS_MESSAGE__', "Your message has been sent. Thank you!");
@@ -21,7 +21,7 @@
 
 	//Send mail function
 	function send_mail($to,$subject,$message,$headers){
-		if(@mail($to,$subject,$message)){
+		if(@mail($to,$subject,$headers)){
 			echo json_encode(array('info' => 'success', 'msg' => __SUCCESS_MESSAGE__));
 		} else {
 			echo json_encode(array('info' => 'error', 'msg' => __ERROR_MESSAGE__));
