@@ -36,10 +36,10 @@
 			return true;
 		}
 	}
-	$_POST['name'] = "nathan gortt";
-	$_POST['mail'] = "nmg2225@yahoo.com";
-	$_POST['website'] = "randomWebsite@global.com";
-	$_POST['comment'] = "random comment";
+	// $_POST['name'] = "nathan gortt";
+	// $to = "nmg2225@yahoo.com";
+	// $subject = "randomWebsite@global.com";
+	$message = "random comment";
 	//Get post data
 	if(isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['comment'])){
 		$name 	 = $_POST['name'];
@@ -58,32 +58,12 @@
 			exit();
 		} else {
 			//Send Mail
-			$to = __TO__;
-			$subject = __SUBJECT__ . ' ' . $name;
+			$to = "nmg2225@yahoo.com";
+			$subject = "random subject";
 			$message = '
 			<html>
-			<head>
-			  <title>Mail from '. $name .'</title>
-			</head>
 			<body>
-			  <table style="width: 500px; font-family: arial; font-size: 14px;" border="1">
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">Name:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $name .'</td>
-				</tr>
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">E-mail:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $mail .'</td>
-				</tr>
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">subject:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $subject .'</td>
-				</tr>
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">Comment:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $comment .'</td>
-				</tr>
-			  </table>
+			 <h1>hi</h1>
 			</body>
 			</html>
 			';
