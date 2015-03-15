@@ -441,6 +441,9 @@ body {
 
     font-weight: 600;
 }
+.contactHead{
+    margin-bottom: 12px!important;
+}
 .search-widget2 {
     /*margin-left:auto;*/
     /*margin-right:0%;*/
@@ -839,24 +842,26 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,118,249,0.8);
-    transition: all 0.17s ease-in-out;
+    /*opacity: .38;*/
+    /*background: transparent;*/
+   /* transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
     -o-transition: all 0.17s ease-in-out;
     transform: scale(0);
     -webkit-transform: scale(0);
     -moz-transform: scale(0);
-    -o-transform: scale(0);
+    -o-transform: scale(0);*/
 }
 
 .hover-box a {
+    outline: none;
     width: 50px;
     height: 50px;
     display: inline-block;
     position: absolute;
     top: 50%;
-    margin-top: -25px;
+    /*margin-top: -25px;*/
     transition: all 0.35s ease-in-out;
     -moz-transition: all 0.35s ease-in-out;
     -webkit-transition: all 0.35s ease-in-out;
@@ -874,6 +879,8 @@ body {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -webkit-backface-visibility: hidden;
+     opacity: .95;
+
 }
 
 .work-post:hover .hover-box a {
@@ -882,35 +889,57 @@ body {
     -moz-transform: scale(1);
     -o-transform: scale(1);
     -webkit-backface-visibility: hidden;
+    background-color: #007aff;
+
+     /*opacity: 1!important;*/
 }
 
-.hover-box a:after {
-    position: absolute;
-    content: '';
-    width: 50px;
-    height: 50px;
-    background: url('../images/zoom-after.png') center center no-repeat;
-    transition: all 0.17s ease-in-out;
-    -moz-transition: all 0.17s ease-in-out;
-    -webkit-transition: all 0.17s ease-in-out;
-    -o-transition: all 0.17s ease-in-out;
+.hover-box a:hover {
+     /*opacity: 1!important;*/
+    /*position: absolute;*/
+    /*content: '';*/
+
+    /*width: 50px;*/
+    /*height: 50px;*/
+    /*background: url('../images/zoom-after.png') center center no-repeat;*/
+    opacity: .55;
+    transition: all 0.21s ease-in-out;
+    -moz-transition: all 0.21s ease-in-out;
+    -webkit-transition: all 0.21s ease-in-out;
+    -o-transition: all 0.21s ease-in-out;
 }
 
-.hover-box a:hover:after {
-    transform: scale(1.2);
+/*.hover-box a:hover:after {
+     /*opacity: 1!important;*/
+  /*  transform: scale(1.2);
     -webkit-transform: scale(1.2);
     -moz-transform: scale(1.2);
     -o-transform: scale(1.2);
-    opacity: 0;
+    opacity: 0;*/
+
+.hoverProd{
+    margin-top: -38%;
+    width: 100%!important;
+       height: 130%!important;
+    background-color: transparent!important;
 }
 
 .hover-box a.zoom {
-    right: 50%;
+    left: 6%;
+     /*opacity: 1!important;*/
+     /*color:orange;*/
+    top: 75%;
     margin-right: 5px;
+    z-index: 10;
     background: url('../images/zoom.png') center center no-repeat;
+    border-radius: 50%!important;
+}
+.zoomIcon{
+    /*color:orange!important;*/
 }
 
 .hover-box a.page {
+    display: none;
     left: 50%;
     margin-left: 5px;
     background: url('../images/page.png') center center no-repeat;

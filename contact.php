@@ -1,21 +1,21 @@
-<?php 
+<?php
 
 	/* ==========================  Define variables ========================== */
 
 	#Your e-mail address
-	define("__TO__", "test@test.com");
+	define("__TO__", "NathanGrotticelli@gmail.com");
 
 	#Message subject
-	define("__SUBJECT__", "");
+	define("__SUBJECT__", "Test Subj");
 
 	#Success message
 	define('__SUCCESS_MESSAGE__', "Your message has been sent. Thank you!");
 
-	#Error message 
+	#Error message
 	define('__ERROR_MESSAGE__', "Error, your message hasn't been sent");
 
 	#Messege when one or more fields are empty
-	define('__MESSAGE_EMPTY_FILDS__', "Please fill out  all fields");
+	define('__MESSAGE_EMPTY_FILDS__', "Please fill out all fields");
 
 	/* ========================  End Define variables ======================== */
 
