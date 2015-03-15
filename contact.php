@@ -68,9 +68,11 @@
 			</html>
 			';
 
-			$headers  = 'MIME-Version: 1.0' . "\r\n";
-			$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-			$headers .= 'From: ' . $mail . "\r\n";
+		 	 $from = "email@domian.com";
+        $headers = "From:" . $from . "\r\n";
+        $headers .= "MIME-Version: 1.0\r\n";
+        $headers .= "Content-Type: text/html; charset=ISO-8859-1\r\n";
+				// $headers .= 'From: ' . $mail . "\r\n";
 
 			send_mail($to,$subject,$message,$headers);
 		}
