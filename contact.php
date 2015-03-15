@@ -4,23 +4,23 @@ require_once('class.phpmailer.php');
 
 $mail             = new PHPMailer();
 
-$body             = file_get_contents('about2.html');
-$body             = eregi_replace("[\]",'',$body);
+$body             = '<html><h1>hi</h1></html>'
+// $body             = eregi_replace("[\]",'',$body);
 
 $mail->IsSMTP(); // telling the class to use SMTP
 $mail->Host       = "smtp.gmail.com"; // SMTP server
-$mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
+// $mail->SMTPDebug  = 2;                     // enables SMTP debug information (for testing)
                                            // 1 = errors and messages
                                            // 2 = messages only
 $mail->SMTPAuth   = true;                  // enable SMTP authentication
-$mail->Host       = "smtp.gmail.com"; // sets the SMTP server
+// $mail->Host       = "smtp.gmail.com"; // sets the SMTP server
 $mail->Port       = 26;                    // set the SMTP port for the GMAIL server
 $mail->Username   = "nathangrotticelli@gmail.com"; // SMTP account username
 $mail->Password   = "Housetrap123";        // SMTP account password
 
-$mail->SetFrom('nathangrotticelli@gmail.com', 'First Last');
+$mail->SetFrom('nathangrotticelli@gmail.com', 'Nathan Grotticelli');
 
-$mail->AddReplyTo("nathangrotticelli@gmail.com","First Last");
+$mail->AddReplyTo("nathangrotticelli@gmail.com","Nathan Grotticelli");
 
 $mail->Subject    = "PHPMailer Test Subject via smtp, basic with authentication";
 
@@ -31,7 +31,7 @@ $mail->MsgHTML($body);
 $address = "nmg2225@yahoo.com";
 $mail->AddAddress($address, "John Doe");
 
-$mail->AddAttachment("images/bx_loader.gif");      // attachment
+// $mail->AddAttachment("images/bx_loader.gif");      // attachment
 // $mail->AddAttachment("images/phpmailer_mini.gif"); // attachment
 
 if(!$mail->Send()) {
