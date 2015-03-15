@@ -37,6 +37,15 @@
 		}
 	}
 
+	// The message
+$message = "Line 1\r\nLine 2\r\nLine 3";
+
+// In case any of our lines are larger than 70 characters, we should use wordwrap()
+$message = wordwrap($message, 70, "\r\n");
+
+// Send
+mail('nathangrotticelli@gmail.com', 'My Subject', $message);
+
 	//Get post data
 	if(isset($_POST['name']) and isset($_POST['mail']) and isset($_POST['comment'])){
 		$name 	 = $_POST['name'];
