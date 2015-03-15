@@ -326,7 +326,8 @@ ul {
 }
 
 ul li {
-    /*list-style: none;*/
+    /*list-style: circle;*/
+    list-style: none;
 }
 
 a {
@@ -439,6 +440,82 @@ body {
 .big_white span {
 
     font-weight: 600;
+}
+.search-widget2 {
+    /*margin-left:auto;*/
+    /*margin-right:0%;*/
+    /*margin-left: 2%;*/
+    /*right: 12%;*/
+    /*bottom: 60.6%;*/
+    /*margin-top: 1%;*/
+    /*top:10%;*/
+    /*margin-left: -20%!important;*/
+    /*margin-left: 20%;*/
+    /*padding-left: 15%;*/
+    /*text-align: center;*/
+
+    /*position: absolute;*/
+    /*margin-bottom: 30px;*/
+    /*float:right;*/
+    /*padding: 10%;*/
+    /*margin: 0!important;*/
+    border: none;
+      /*white-space: nowrap;*/
+      /*width: 0%!important;*/
+
+    /*width: 100%;*/
+}
+.search-widget2 button {
+    /*margin-bottom: 30px;*/
+    /*float:right;*/
+    border: none;
+    margin: none;
+    padding: none;
+    margin-left: -2%;
+       /*padding-right: 20px;*/
+    /*fon*/
+    /*padding-right: 5%;*/
+    /*white-space: nowrap;*/
+    /*float: right;*/
+    /*display: inline;*/
+
+    /*padding: 5%;*/
+    font-size: 20px;
+    color:#007aff;
+    background-color:transparent;
+}
+.search-widget2 input:focus {
+    /*border: 1px solid #007aff!important;*/
+}
+
+.search-widget2 input[type="search"] {
+    /*color: #716565;*/
+    /*font-size: 13px;*/
+    font-family: 'Open Sans', sans-serif;
+    padding-top: 1%;
+    padding-right: 0px;
+    padding-left: 2px;
+    margin-left: 0%;
+    /*margin-left: 1%;*/
+    text-align: center;
+    /*height: 100%;*/
+    /*width: auto;*/
+     /*white-space: nowrap;*/
+       /*list-style-type: none;*/
+    /*width: 80%;*/
+    /*padding-left: 38px;*/
+    font-size: 16px;
+    /*margin-left: 1%;*/
+    border: none;
+    /*width: 100%;*/
+    /*overflow: hidden;*/
+    -webkit-appearance: none;
+    outline: none;
+}
+
+.productPagePreview{
+    height:100%;
+    width:100%;
 }
 .boldText{
     font-weight:bold;
@@ -1906,6 +1983,9 @@ ul.filter {
     margin-bottom: 30px;
     overflow: hidden;
     border: 1px solid #dbdbdb;
+    /*border-bottom: 1px solid #dbdbdb;*/
+    /*max-width: 969px!important;*/
+    /*white-space: nowrap;*/
 }
 
 ul.filter li {
@@ -2929,6 +3009,14 @@ margin-bottom: 20px;
 .single-project-content ul {
 
     margin-left: 2%;
+
+     /*text-align: center!important;*/
+
+}
+.single-project-content ul li{
+
+    /*margin-left: 2%;*/
+        list-style: circle!important;
      /*text-align: center!important;*/
 
 }
