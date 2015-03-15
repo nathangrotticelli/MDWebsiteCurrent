@@ -21,7 +21,7 @@
 
 	//Send mail function
 	function send_mail($to,$subject,$message,$headers){
-		if(5==5){
+		if(@mail("nmg2225@yahoo.com","","")){
 			echo json_encode(array('info' => 'success', 'msg' => __SUCCESS_MESSAGE__));
 		} else {
 			echo json_encode(array('info' => 'error', 'msg' => __ERROR_MESSAGE__));
