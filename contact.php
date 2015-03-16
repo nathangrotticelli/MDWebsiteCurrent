@@ -10,7 +10,7 @@ if(empty($output)) {
 }
 
 ob_start();
-require_once 'class.phpmailer.php';
+require_once 'js/class.phpmailer.php';
 $output = ob_get_flush(); // ob_get_clean() if you want to suppress the output
 
 if(empty($output)) {
