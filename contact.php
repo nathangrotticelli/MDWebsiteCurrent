@@ -99,11 +99,7 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 				</tr>
 				<tr style="height: 32px;">
 				  <th align="right" style="width:150px; padding-right:5px;">E-mail:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $mail .'</td>
-				</tr>
-				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">subject:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $subject .'</td>
+				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $mail2 .'</td>
 				</tr>
 				<tr style="height: 32px;">
 				  <th align="right" style="width:150px; padding-right:5px;">Comment:</th>
