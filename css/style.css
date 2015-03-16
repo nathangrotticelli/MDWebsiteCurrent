@@ -2412,7 +2412,7 @@ ul.contact-information-list li i {
     padding: 13px 20px;
     background: #0076f9;
     text-transform: uppercase;
-    border: none;
+    border: none!important;
     transition: all 0.2s ease-in-out;
     -moz-transition: all 0.2s ease-in-out;
     -webkit-transition: all 0.2s ease-in-out;
@@ -2427,7 +2427,7 @@ ul.contact-information-list li i {
 .msg,
 .msg2 {
     height:30px;
-    font-size:13px;
+    font-size:14px;
     font-family: 'Open Sans', sans-serif;
 }
 
