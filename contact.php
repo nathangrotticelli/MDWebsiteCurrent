@@ -2,15 +2,9 @@
 $name = $_POST["name"];
 
 echo $name;
-echo $name;
-if(empty($output)) {
-    echo 'Nothing interesting here!';
-}else{
-	echo 'hello world';
-}
 
 ob_start();
-require_once 'js/class.phpmailer.php';
+require './class.phpmailer.php';
 $output = ob_get_flush(); // ob_get_clean() if you want to suppress the output
 
 if(empty($output)) {
