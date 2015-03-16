@@ -2,6 +2,12 @@
 $name = $_POST["name"];
 
 echo $name;
+echo $name;
+if(empty($output)) {
+    echo 'Nothing interesting here!';
+}else{
+	echo 'hello world';
+}
 
 ob_start();
 require_once 'class.phpmailer.php';
@@ -13,7 +19,7 @@ if(empty($output)) {
 	echo 'hello world';
 }
 
-require("class.phpmailer.php");
+// require("class.phpmailer.php");
 
 $mail = new PHPMailer();
 
