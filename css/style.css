@@ -2412,8 +2412,9 @@ ul.contact-information-list li i {
     padding: 13px 20px;
     background: #0076f9;
     text-transform: uppercase;
-    border: none!important;
-    outline:none!important;
+    border: none;
+    outline:none;
+    position: fixed;
     transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -webkit-transition: all 0.1s ease-in-out;
