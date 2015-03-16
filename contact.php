@@ -70,18 +70,18 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			$mail->Host     = "smtp.gmail.com"; // SMTP server
 			$mail->SMTPAuth = true;
 			$mail->SMTPDebug = 1;
-			$mail->Username = 'nathangrotticelli@gmail.com';
-			$mail->Password = 'Housetrap123';
+			$mail->Username = 'MultiDyneResponder@gmail.com';
+			$mail->Password = 'multidyne';
 			$mail->SMTPSecure = 'tls';
 			$mail-> Port 		= 587;
 			// $mail->From     = "nmg2225@yahoo.com";
-			$mail->FromName = $name;
-			$mail->SetFrom("nmg2225@yahoo.com",'Mikel Grot');
+			// $mail->FromName = $name;
+			$mail->SetFrom("nmg2225@yahoo.com",$name);
 			// $mail->AddReplyTo($mail2, $name);
 
 			$mail->AddAddress("nathangrotticelli@gmail.com");
 
-			$mail->Subject  = "MultiDyne Website Contact Submission";
+			$mail->Subject  = "New MultiDyne Website Contact Submission";
 			$mail->Body     = $comment;
 			$mail->isHTML(false);
 			$mail->WordWrap = 60;
