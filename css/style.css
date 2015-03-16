@@ -2428,20 +2428,23 @@ ul.contact-information-list li i {
 .msg,
 .msg2 {
     height:30px;
-    font-size:16px;
+    font-size:15px;
     font-family: 'Open Sans', sans-serif;
 }
 
 .msg.error,
 .msg2.error {
     color:#eb2c06;
-    height:30px!important;
+    height:30px;
 }
 
 .msg.success,
 .msg2.success {
     color:#008000;
-    height:30px!important;
+    height:30px;
+}
+.msg22{
+    height:30px;
 }
 
 /*-------------------------------------------------*/
