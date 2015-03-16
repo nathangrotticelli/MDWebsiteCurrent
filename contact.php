@@ -3,10 +3,6 @@ $name = $_POST["name"];
 
 echo $name;
 
-
-
-require("class.phpmailer.php");
-
 $mail = new PHPMailer();
 
 $mail->IsSMTP();  // telling the class to use SMTP
