@@ -2413,10 +2413,11 @@ ul.contact-information-list li i {
     background: #0076f9;
     text-transform: uppercase;
     border: none!important;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
+    outline:none!important;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
 }
 
 #contact-form input[type="submit"]:hover,

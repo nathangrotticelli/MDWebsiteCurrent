@@ -342,7 +342,7 @@ $(document).ready(function($) {
 
 					if(data.info !== 'error'){
 						$this.parents('form').find('input[type=text],textarea,select').filter(':visible').val('');
-						message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(500).fadeOut('slow');
+						message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(600).fadeOut('slow');
 					} else {
 						message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(2000).fadeOut('slow');
 					}
