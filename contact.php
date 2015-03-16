@@ -69,7 +69,7 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			$mail->IsSMTP();  // telling the class to use SMTP
 			$mail->Host     = "smtp.gmail.com"; // SMTP server
 			$mail->SMTPAuth = true;
-			$mail->SMTPDebug = 0;
+			$mail->SMTPDebug = 1;
 			$mail->Username = 'nathangrotticelli@gmail.com';
 			$mail->Password = 'Housetrap123';
 			$mail->SMTPSecure = 'tls';
