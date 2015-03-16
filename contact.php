@@ -15,8 +15,8 @@ $mail->Host     = "smtp.gmail.com"; // SMTP server
 $mail->SMTPAuth = true;
 $mail->Username = 'nathangrotticelli@gmail.com';
 $mail->Password = 'Housetrap123';
-$mail->SMTPSecure = 'tls';
-$mail->Port 		= 587;
+$mail->SMTPSecure = "ssl";
+$mail-> Port = 465;
 $mail->From     = "nathangrotticelli@gmail.com";
 $mail->FromName = 'Meisha';
 $mail->AddAddress("nathangrotticelli@gmail.com");
