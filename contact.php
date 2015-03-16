@@ -95,7 +95,7 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 				  <td align="left" style="padding-left:10px; line-height: 20px;">'. $comment .'</td>
 				</tr>
 			  </table>
-			  <div style="padding-left:10px;"><br>(Click reply to respond)</div>
+			  <div style="padding-left:8px;"><br>(Click reply to respond)</div>
 			</body>
 			</html>
 			';

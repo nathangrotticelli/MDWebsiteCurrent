@@ -322,6 +322,9 @@ $(document).ready(function($) {
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Form
 	/* ---------------------------------------------------------------------- */
+	$('#contact-form').submit(function () {
+	 return false;
+	});
 
 	var submitContact = $('.submit_contact');
 
