@@ -322,27 +322,7 @@ $(document).ready(function($) {
 	/* ---------------------------------------------------------------------- */
 	/*	Contact Form
 	/* ---------------------------------------------------------------------- */
-	$('#contact-form').submit(function () {
-			message = $('.msg2');
-			$.ajax({
-				type: "POST",
-				url: 'contact.php',
-				dataType: 'json',
-				cache: false,
-				data: $('.contact-work-form2').serialize(),
-				success: function(data) {
 
-					if(data.info !== 'error'){
-						$this.parents('form').find('input[type=text],textarea,select').filter(':visible').val('');
-						message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-					} else {
-						message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-					}
-				}
-			});
-
-	 // return false;
-	});
 
 	var submitContact = $('.submit_contact');
 
@@ -350,29 +330,8 @@ $(document).ready(function($) {
 		e.preventDefault();
 
 		var $this = $(this),
-			message = $('.msg');
+				message = $('.msg2');
 
-		if ( !$this.hasClass('main-form') ){
-
-			$.ajax({
-				type: "POST",
-				url: 'contact.php',
-				dataType: 'json',
-				cache: false,
-				data: $('.contact-work-form').serialize(),
-				success: function(data) {
-
-					if(data.info !== 'error'){
-						$this.parents('form').find('input[type=text],textarea,select').filter(':visible').val('');
-						message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-					} else {
-						message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
-					}
-				}
-			});
-		} else {
-
-			message = $('.msg2');
 			$.ajax({
 				type: "POST",
 				url: 'contact.php',
@@ -389,7 +348,7 @@ $(document).ready(function($) {
 					}
 				}
 			});
-		}
+
 	});
 
 	/* ---------------------------------------------------------------------- */
