@@ -4,7 +4,7 @@ $name = $_POST["name"];
 echo $name;
 
 ob_start();
-require './class.phpmailer.php';
+require 'PHPMailer-master/PHPMailerAutoload.php';
 $output = ob_get_flush(); // ob_get_clean() if you want to suppress the output
 
 if(empty($output)) {
