@@ -2414,7 +2414,6 @@ ul.contact-information-list li i {
     text-transform: uppercase;
     border: none;
     outline:none;
-    position: fixed;
     transition: all 0.1s ease-in-out;
     -moz-transition: all 0.1s ease-in-out;
     -webkit-transition: all 0.1s ease-in-out;
@@ -2436,14 +2435,15 @@ ul.contact-information-list li i {
 .msg.error,
 .msg2.error {
     color:#eb2c06;
+    height:30px!important;
 }
 
 .msg.success,
 .msg2.success {
-    color:#008000;
+    color:#008000;height:30px!important;
 }
 .msg22{
-    height:auto!important;
+    height:30px!important;
 }
 
 /*-------------------------------------------------*/
