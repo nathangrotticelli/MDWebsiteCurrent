@@ -342,9 +342,9 @@ $(document).ready(function($) {
 
 					if(data.info !== 'error'){
 						$this.parents('form').find('input[type=text],textarea,select').filter(':visible').val('');
-						message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
+						message.hide().removeClass('success').removeClass('error').addClass('success').html(data.msg).fadeIn('slow').delay(100).fadeOut('slow');
 					} else {
-						message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(5000).fadeOut('slow');
+						message.hide().removeClass('success').removeClass('error').addClass('error').html(data.msg).fadeIn('slow').delay(100).fadeOut('slow');
 					}
 				}
 			});
