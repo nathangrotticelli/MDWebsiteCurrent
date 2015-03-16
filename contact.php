@@ -69,16 +69,16 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			$mail->IsSMTP();  // telling the class to use SMTP
 			$mail->Host     = "smtp.gmail.com"; // SMTP server
 			$mail->SMTPAuth = true;
-			$mail->SMTPDebug = 2;
+			$mail->SMTPDebug = 0;
 			$mail->Username = 'nathangrotticelli@gmail.com';
 			$mail->Password = 'Housetrap123';
 			$mail->SMTPSecure = 'tls';
 			$mail-> Port 		= 587;
-			$mail->From     = 'nmg2225@yahoo.com';
-			$mail->FromName = 'FromName';
+			$mail->From     = $mail2;
+			$mail->FromName = $name;
 			$mail->AddAddress("nathangrotticelli@gmail.com");
 
-			$mail->Subject  = "Customer Contact Submission";
+			$mail->Subject  = "MultiDyne Website Contact Submission";
 			$mail->Body     = $comment;
 			$mail->isHTML(false);
 			$mail->WordWrap = 50;
