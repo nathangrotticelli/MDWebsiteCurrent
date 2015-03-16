@@ -74,10 +74,11 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			$mail->Password = 'Housetrap123';
 			$mail->SMTPSecure = 'tls';
 			$mail-> Port 		= 587;
-			$mail->From     = "nathangrotticelli@gmail.com";
-			// $mail->FromName = $name;
-			$mail->SetFrom($mail2, $name);
-			$mail->AddReplyTo($mail2, $name);
+			$mail->From     = "nmg2225@yahoo.com";
+			$mail->FromName = $name;
+			$mail->SetFrom("nmg2225@yahoo.com");
+			// $mail->AddReplyTo($mail2, $name);
+
 			$mail->AddAddress("nathangrotticelli@gmail.com");
 
 			$mail->Subject  = "MultiDyne Website Contact Submission";
