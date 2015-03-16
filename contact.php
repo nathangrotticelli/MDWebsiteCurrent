@@ -2,11 +2,18 @@
 $name = $_POST["name"];
 
 echo $name;
-if(!@include("class.phpmailer.php")) throw new Exception("Failed to include 'script.php'");
+
+ob_start();
+require_once 'class.phpmailer.php';
+$output = ob_get_flush(); // ob_get_clean() if you want to suppress the output
+
+if(empty($output)) {
+    echo 'Nothing interesting here!';
+}else{
+	echo 'hello world';
+}
 
 require("class.phpmailer.php");
-
-if(!@include("class.phpmailer.php")) throw new Exception("Failed to include2222 'script.php'");
 
 $mail = new PHPMailer();
 
