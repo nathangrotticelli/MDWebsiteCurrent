@@ -2427,7 +2427,7 @@ ul.contact-information-list li i {
 
 .msg,
 .msg2 {
-    height:30px;
+    height:30px!important;
     font-size:14px;
     font-family: 'Open Sans', sans-serif;
 }
@@ -2442,7 +2442,7 @@ ul.contact-information-list li i {
     color:#008000;
 }
 .msg22{
-    height:30px!important;
+    height:auto!important;
 }
 
 /*-------------------------------------------------*/
