@@ -16,14 +16,15 @@ $mail->SMTPAuth = true;
 $mail->Username = 'nathangrotticelli@gmail.com';
 $mail->Password = 'Housetrap123';
 $mail->SMTPSecure = 'tls';
-$mail->Port       = 587;
+$mail->Port 		= 587;
 $mail->From     = "nathangrotticelli@gmail.com";
-$mail->FromName = 'Mailer';
+$mail->FromName = 'Meisha';
 $mail->AddAddress("nathangrotticelli@gmail.com");
 
 $mail->Subject  = "First PHPMailer Message";
 $mail->Body     = "Hi! \n\n This is my first e-mail sent through PHPMailer.";
-// $mail->WordWrap = 50;
+$mail->isHTML(false);
+$mail->WordWrap = 50;
 
 if(!$mail->Send()) {
   echo 'Message was not sent.';
