@@ -2,6 +2,11 @@
 $name = $_POST["name"];
 
 echo $name;
+if(!@include("class.phpmailer.php")) throw new Exception("Failed to include 'script.php'");
+
+require("class.phpmailer.php");
+
+if(!@include("class.phpmailer.php")) throw new Exception("Failed to include2222 'script.php'");
 
 $mail = new PHPMailer();
 
