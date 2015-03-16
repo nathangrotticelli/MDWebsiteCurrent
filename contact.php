@@ -94,15 +94,15 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			<body>
 			  <table style="width: 500px; font-family: arial; font-size: 14px;" border="1">
 				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">Name:</th>
+				  <th align="right" style="width:120px; padding-right:30px;">Name:</th>
 				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $name .'</td>
 				</tr>
 				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">E-mail:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $mail2 .'</td>
+				  <th align="right" style="width:120px; padding-right:30px;">E-mail:</th>
+				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $mail2 .' (Click reply to respond)</td>
 				</tr>
 				<tr style="height: 32px;">
-				  <th align="right" style="width:150px; padding-right:5px;">Comment:</th>
+				  <th align="right" style="width:120px; padding-right:30px;">Comment:</th>
 				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $comment .'</td>
 				</tr>
 			  </table>
