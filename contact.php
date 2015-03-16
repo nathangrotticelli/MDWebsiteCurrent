@@ -4,14 +4,6 @@
 
 require 'PHPMailer-master/PHPMailerAutoload.php';
 
-
-// require("class.phpmailer.php");
-	// #Your e-mail address
-	// define("__TO__", "test@test.com");
-
-	// #Message subject
-	// define("__SUBJECT__", "");
-
 	#Success message
 	define('__SUCCESS_MESSAGE__', "Your message has been sent. Thank you!");
 
