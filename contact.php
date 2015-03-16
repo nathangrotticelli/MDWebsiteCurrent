@@ -96,13 +96,14 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 				</tr>
 				<tr style="height: 32px;">
 				  <th align="center" style="width:140px;">E-mail:</th>
-				  <td align="left" style="padding-left:10px; line-height: 20px;">'. $mail2 .' <div style="padding-left:10px;">(Click reply to respond)</div></td>
+				  <td align="left" style="padding-left:10px; line-height: 20px;">'. $mail2 .'</td>
 				</tr>
 				<tr style="height: 32px;">
 				  <th align="center" style="width:140px;">Message:</th>
 				  <td align="left" style="padding-left:10px; line-height: 20px;">'. $comment .'</td>
 				</tr>
 			  </table>
+			  <div style="padding-left:10%;"><br>(Click reply to respond)</div>
 			</body>
 			</html>
 			';
