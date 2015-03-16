@@ -69,7 +69,7 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			$mail->IsSMTP();  // telling the class to use SMTP
 			$mail->Host     = "smtp.gmail.com"; // SMTP server
 			$mail->SMTPAuth = true;
-			$mail->SMTPDebug = 1;
+			$mail->SMTPDebug = 0;
 			$mail->Username = 'MultiDyneResponder@gmail.com';
 			$mail->Password = 'multidyne';
 			$mail->SMTPSecure = 'tls';
@@ -88,21 +88,18 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			// $subject = __SUBJECT__ . ' ' . $name;
 			$message = '
 			<html>
-			<head>
-			  <title>New website message from '. $name .'</title>
-			</head>
 			<body>
 			  <table style="width: 500px; font-family: arial; font-size: 14px;" border="1">
 				<tr style="height: 32px;">
-				  <th align="right" style="width:120px; padding-right:30px;">Name:</th>
+				  <th align="center" style="width:120px;">Name:</th>
 				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $name .'</td>
 				</tr>
 				<tr style="height: 32px;">
-				  <th align="right" style="width:120px; padding-right:30px;">E-mail:</th>
-				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $mail2 .' (Click reply to respond)</td>
+				  <th align="center" style="width:120px;">E-mail:</th>
+				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $mail2 .'     (Click reply to respond)</td>
 				</tr>
 				<tr style="height: 32px;">
-				  <th align="right" style="width:120px; padding-right:30px;">Comment:</th>
+				  <th align="center" style="width:120px;">Comment:</th>
 				  <td align="left" style="padding-left:5px; line-height: 20px;">'. $comment .'</td>
 				</tr>
 			  </table>
