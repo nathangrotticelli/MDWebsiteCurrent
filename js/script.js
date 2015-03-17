@@ -118,6 +118,14 @@ $(document).ready(function($) {
 		return false;
 	});
 
+	var animateSlideButton = $('.go-slider');
+		// htmBody = $('html, body');
+
+	animateSlideButton.click(function(){
+	htmBody.animate({scrollTop: $('#content').position().top-70}, 'slow');
+		return false;
+	});
+
 	/*-------------------------------------------------*/
 	/* =  flexslider
 	/*-------------------------------------------------*/

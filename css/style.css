@@ -370,7 +370,7 @@ h4 {
 
 h5 {
     color: #000000;
-    font-size: 15px;
+    font-size: 16px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin: 0;
@@ -525,7 +525,7 @@ body {
     color:black!important;
     margin-top:2.5%;
 }
-.linkedSlider{
+.linked{
        position:absolute;
     top:0;
     left:0;
@@ -535,6 +535,7 @@ body {
     /*margin-left: 100px!important;*/
     width: 100%;
 }
+
 .firstTitle{
     /*margin-top: 3%!important;*/
       color:white!important;
@@ -1126,11 +1127,13 @@ body {
 .news-item h5 {
     margin-bottom: 5px;
     line-height: 22px;
+    font-size: 21px;
 }
 
 .news-item p {
     line-height: 22px;
     margin-bottom: 10px;
+    font-size: 14px;
 }
 
 a.read-more {
@@ -1141,9 +1144,9 @@ a.read-more {
     -o-border-radius: 4px;
     border: 1px solid #0076f9;
     color: #0076f9;
-    padding: 8px 12px;
+    padding: 12px 41px;
     background: #fff;
-    font-size: 12px;
+    font-size: 13.5px;
     font-family: 'Open Sans', sans-serif;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
@@ -1151,6 +1154,11 @@ a.read-more {
     -o-transition: all 0.17s ease-in-out;
     text-transform: lowercase;
     text-decoration: none;
+}
+
+a.read-more:hover{
+    opacity: .8;
+    background:#F0F0F0;
 }
 
 a.read-more i {
@@ -1172,7 +1180,7 @@ a.read-more:hover i {
 
 .hover-item {
     position: absolute;
-    top: 50%;
+    bottom: 6%;
     margin-top: -56px;
     left: 0;
 }
@@ -2233,17 +2241,17 @@ ul.pagination-list li a:hover {
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     margin: 0;
-    margin-left: 55px;
+    /*margin-left: 55px;*/
 }
 
 .tabs-widget .tab-content ul li h6 a {
-    color: #aeaeae;
+     color: #007aff;
     text-decoration: none;
     display: inline-block;
 }
 
 .tabs-widget .tab-content ul li h6 a:hover {
-    color: #007aff;
+    opacity: .6;
 }
 
 .accordion-widget {
@@ -2297,6 +2305,7 @@ ul.pagination-list li a:hover {
 
 .contact-information p {
     margin-bottom: 20px;
+    font-size: 16px;
 }
 
 ul.contact-information-list li {
@@ -2452,25 +2461,56 @@ ul.contact-information-list li i {
 /*-------------------------------------------------*/
 
 .single-post-content {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 10px;
     overflow: hidden;
+    /*margin-right: -6px;*/
+    /*padding: .2%;*/
 }
 
 .single-post-content img {
-    width: 100%;
-    margin-bottom: 30px;
+    width: 50%;
+    /*margin-bottom: 30px;*/
+    float: right;
+     /*padding-right: .5px;*/
+     /*padding-left: 1px;/*/
+    margin-left:25px;
+    margin-top: 3px;
+    margin-right: 2.5px;
+    /*margin-bottom: 9px;*/
+    /*padding-left: 1%;*/
+    /*padding-right: -2%;*/
+    /*left:300px;*/
+    /*margin-right: -20px;*/
+    border-radius: 3%;
 }
 
 .single-post-content h2 {
-    font-weight: 300;
-    margin-bottom: 10px;
-    font-size: 28px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-size: 25px;
+    /*padding-right:40px;*/
+    /*padding-top: .5%;*/
 }
 
 .single-post-content p {
     line-height: 22px;
-    margin-bottom: 20px;
+    margin-top: 30px;
+    /*margin-bottom: 20px;*/
+    font-size: 15.5px;
+    /*margin-right: -2px;*/
+    /*color:lightgray;*/
+    /*opacity: .7;*/
 }
+.articleIntro{
+    font-weight: bold;
+    display: inline;
+    color:black;
+    opacity: 1;
+    /*top:100px;*/
+    /*margin-top: 55px;*/
+}
+
 
 .comment-section {
     margin-bottom: 10px;

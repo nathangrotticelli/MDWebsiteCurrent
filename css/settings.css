@@ -627,7 +627,7 @@ website:   	http://www.themepunch.com
 															-moz-opacity: 1;
 															-khtml-opacity: 1;
 															opacity: 1;
-															-webkit-transition: opacity 0.2s ease-out; -moz-transition: opacity 0.2s ease-out; -o-transition: opacity 0.2s ease-out; -ms-transition: opacity 0.2s ease-out;
+															-webkit-transition: opacity 0.4s ease-out; -moz-transition: opacity 0.4s ease-out; -o-transition: opacity 0.5s ease-out; -ms-transition: opacity 0.4s ease-out;
 															/*background-color: gray!important;*/
 															/*border-radius: 20%;*/
 														}
@@ -665,18 +665,18 @@ website:   	http://www.themepunch.com
 .tp-rightarrow.square-old								{	z-index:100;cursor:pointer; position:relative;	background:url(../images/arrow_right2.png) no-Repeat top left;	width:12px;	height:17px;   float:left;	margin-left:0px; margin-top:-9px;}
 
 
-.tp-leftarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../images/prev.png) no-Repeat center center;width:56px; height:112px;
+.tp-leftarrow.default									{	z-index:100;cursor:pointer;opacity: .6; position:relative;	background:url(../images/prev.png) no-Repeat center center;width:56px; height:112px;
 
 														}
-.tp-rightarrow.default									{	z-index:100;cursor:pointer; position:relative;	background:url(../images/next.png) no-Repeat center center; width:56px;	height: 112px;
+.tp-rightarrow.default									{	z-index:100;cursor:pointer;opacity: .6; position:relative;	background:url(../images/next.png) no-Repeat center center; width:56px;	height: 112px;
 
 														}
 
 
 
 
-.tp-leftarrow:hover										{	opacity: 0.7; }
-.tp-rightarrow:hover 									{	opacity: 0.7; }
+.tp-leftarrow:hover										{	opacity: 0.3; }
+.tp-rightarrow:hover 									{	opacity: 0.3; }
 
 
 
