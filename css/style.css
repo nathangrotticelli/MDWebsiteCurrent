@@ -2023,15 +2023,19 @@ ul.page-tree li:first-child:before {
 }
 
 ul.page-tree li a {
+    text-decoration: none;
     display: inline-block;
     color: #fff;
     font-size: 13px;
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
+    transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -webkit-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+}
+ul.page-tree li a:hover {
+    opacity: .7;
 }
 
 ul.filter {
