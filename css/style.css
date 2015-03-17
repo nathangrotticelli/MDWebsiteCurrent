@@ -1106,18 +1106,22 @@ body {
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
     -o-border-radius: 10px;
-    transition: all 0.17s ease-in-out;
-    -moz-transition: all 0.17s ease-in-out;
-    -webkit-transition: all 0.17s ease-in-out;
-    -o-transition: all 0.17s ease-in-out;
+    transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -webkit-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
 }
 
-.news-item:hover .inner-item img {
-    -webkit-filter: blur(2px) grayscale(1);
-    -moz-filter: blur(2px) grayscale(1);
-    -o-filter: blur(2px) grayscale(1);
-    -ms-filter: blur(2px) grayscale(1);
-    filter: blur(2px) grayscale(1);
+.news-item .inner-item:hover img {
+  -webkit-filter:  grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter:  grayscale(1);
+    -ms-filter:  grayscale(1);
+    filter:  grayscale(1);
+}
+
+.news-item .inner-item:hover .hover-item ul li a {
+    margin-left: 0;
 }
 
 .latest-post {
@@ -1159,6 +1163,23 @@ a.read-more {
 a.read-more:hover{
     opacity: .8;
     background:#F0F0F0;
+}
+
+.grayPic img{
+        -webkit-filter:  grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter:  grayscale(1);
+    -ms-filter:  grayscale(1);
+    filter:  grayscale(1);
+}
+
+.grayPic .hover-item ul li a{
+    /*opacity:.2;*/
+    margin-left: 0;
+}
+
+.news-item .inner-item:hover .hover-item ul li a {
+    margin-left: 0;
 }
 
 a.read-more i {
@@ -1227,9 +1248,6 @@ a.read-more:hover i {
     -o-transition: all 0.4s ease-in-out;
 }
 
-.item:hover .hover-item ul li a {
-    margin-left: 0;
-}
 
 .why-convertible-box {
     padding-top: 60px;

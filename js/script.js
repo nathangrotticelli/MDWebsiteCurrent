@@ -107,7 +107,7 @@ $(document).ready(function($) {
 	}
 
 	/*-------------------------------------------------*/
-	/* =  Scroll to TOP
+	/* =  Scrolls
 	/*-------------------------------------------------*/
 
 	var animateTopButton = $('.go-top'),
@@ -124,6 +124,12 @@ $(document).ready(function($) {
 	animateSlideButton.click(function(){
 	htmBody.animate({scrollTop: $('#content').position().top-70}, 'slow');
 		return false;
+	});
+
+	var readMore = $('.news-item > .read-more');
+		readMore.hover(function(){
+			$(this).parent().children('.inner-item').toggleClass("grayPic");
+			return false;
 	});
 
 	/*-------------------------------------------------*/
