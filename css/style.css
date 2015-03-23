@@ -18,7 +18,15 @@
  15.Single page
 
 -------------------------------------------------*/
-
+.fullwidthbanner{
+    max-height: 470px!important;
+}
+.fullwidthbanner img{
+    /*max-height: 330px!important;*/
+    /*width: 100%!important;*/
+    /*height: 50%;*/
+    /*max-height: 550px!important;*/
+}
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
@@ -445,9 +453,14 @@ body {
     margin-bottom: 12px!important;
 }
 .search-widget2 {
+    /*top: 100px;*/
     /*margin-left:auto;*/
     /*margin-right:0%;*/
     /*margin-left: 2%;*/
+    /*border: none;*/
+    /*margin-top: -10px;*/
+       margin-bottom: 10px;
+    padding-bottom: 4px;
     /*right: 12%;*/
     /*bottom: 60.6%;*/
     /*margin-top: 1%;*/
@@ -462,7 +475,8 @@ body {
     /*float:right;*/
     /*padding: 10%;*/
     /*margin: 0!important;*/
-    border: none;
+    border:2px solid lightgray;
+    border-top: none;
       /*white-space: nowrap;*/
       /*width: 0%!important;*/
 
@@ -528,6 +542,7 @@ body {
 .linked{
        position:absolute;
     top:0;
+    background-color: blue;
     left:0;
     /*z-index:8;*/
     /*opacity:0.0;*/
@@ -2061,9 +2076,13 @@ ul.page-tree li a:hover {
 }
 
 ul.filter {
-    margin-bottom: 30px;
+    /*margin: */
+ /*   margin-bottom: 10px;*/
+    margin-top: 0px;
     overflow: hidden;
     border: 1px solid #dbdbdb;
+      /*text-align: center;*/
+     /*width: 100%;*/
     /*border-bottom: 1px solid #dbdbdb;*/
     /*max-width: 969px!important;*/
     /*white-space: nowrap;*/
@@ -2071,14 +2090,30 @@ ul.filter {
 
 ul.filter li {
     float: left;
-    border-right: 1px solid #dbdbdb;
-}
+    border: 1px solid #dbdbdb;
+    height:150px;
+     padding: 0px;
+     padding-top: 1%;
+       text-align: center;
+       /*opacity: .5;*/
 
+     /*margin-top: 1%;*/
+     /*padding-bottom: 1%;*/
+
+}
+ul.filter li img {
+ max-height: 80px;
+ /*text-align: center;*/
+ width: 100%;
+ /*float:*/
+}
 ul.filter li a {
     position: relative;
     display: inline-block;
     color: #7e7e7e;
-    font-size: 15px;
+    /*border-bottom: 1px solid black;*/
+    font-size: 14px;
+    /*text-align: center!important;*/
     font-family: 'Open Sans', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
@@ -2087,14 +2122,43 @@ ul.filter li a {
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
     -o-transition: all 0.17s ease-in-out;
-    padding: 12px 17px;
+    /*padding-right: 17px;*/
+    /*padding-left: 17px;*/
+    /*vertical-align: middle;*/
+    /*padding-top:25px;*/
     background: #fff;
+    padding: 10px;
+        /*vertical-align: middle;*/
+    /*padding-top:12px;*/
+    /*padding-right: 15px;*/
+    /*padding-right:10px;*/
+    /*padding-bottom: 10px;*/
+    /*padding:0!important;*/
+    /*margin: 0!important;*/
+    /*background: #0076f9;*/
+    width: 100%;
+    height: 42%;
+        /*border: 1px solid #dbdbdb;*/
+    /*margin-bottom: 19px;*/
 }
 
-ul.filter li a.active,
-ul.filter li a:hover {
+.productCat a.active,
+.productCat:hover a {
     color: #fff;
     background: #0076f9;
+        /*border: .5px solid #dbdbdb;*/
+     /*margin: 0!important;*/
+}
+.productCat img{
+    opacity: 1;
+}
+.productCat:hover img{
+    opacity: .85;
+       /* -webkit-filter:  grayscale(1);
+    -moz-filter: grayscale(1);
+    -o-filter:  grayscale(1);
+    -ms-filter:  grayscale(1);
+    filter:  grayscale(1);*/
 }
 
 ul.filter li a.active:after,
@@ -2129,10 +2193,12 @@ ul.filter li a:hover i {
     width: 1170px;
     margin-left: -15px;
     margin-bottom: 20px;
+      /*display: none!important;*/
 }
 
 .portfolio-container .work-post {
     margin: 15px;
+        /*display: none;*/
 }
 
 .portfolio-container .work-post .work-post-content,
@@ -2333,7 +2399,7 @@ ul.pagination-list li a:hover {
 /*-------------------------------------------------*/
 
 .map {
-    height: 470px;
+    height: 380px;
     width: 100%;
     margin-top: -30px;
     margin-bottom: 50px;
@@ -2344,6 +2410,8 @@ ul.pagination-list li a:hover {
 }
 
 .contact-information {
+    /*height: 100%!important;*/
+    /*margin-top:100px;*/
     margin-bottom: 35px;
 }
 
@@ -2660,7 +2728,13 @@ ul.depth {
 /*-------------------------------------------------*/
 /* =  About page
 /*-------------------------------------------------*/
-
+.aboutPic2{
+    float: left!important;
+     margin-right:25px!important;
+     margin-left: 2.5px!important;
+    margin-top: 3px;
+    /*margin-right: 2.5px;*/
+}
 .about-us-text img {
     float: left;
     margin-right: 20px;
