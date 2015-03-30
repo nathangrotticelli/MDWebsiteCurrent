@@ -452,6 +452,12 @@ body {
 .contactHead{
     margin-bottom: 12px!important;
 }
+.hideThing1{
+    display: block;
+line-height:0;
+height: 0;
+overflow: hidden;
+}
 .search-widget2 {
     /*top: 100px;*/
     /*margin-left:auto;*/

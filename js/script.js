@@ -50,6 +50,11 @@ $(document).ready(function($) {
 		// Isotope Filter
 		$filter.find('.productCat').click(function(){
 			var selector = $(this).attr('data-filter');
+			 $(".productSearch").val("");
+			 	var searchTerm = $(".productSearch").val();
+				$('.work-post').hide().filter(function() {
+    			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
+			  }).show();
 
 			try {
 				$container.isotope({
@@ -65,6 +70,56 @@ $(document).ready(function($) {
 			}
 			return false;
 		});
+
+					$('.searchButton').click(function(){
+									htmBody.animate({scrollTop: $('.portfolio-container').position().top-70}, 'slow');
+									$('.productCat').find('a').removeClass('active');
+									$('.showAllClass').find('a').addClass('active');
+											var searchTerm = $(".productSearch").val();
+											var selector = $('.work-post').hide().filter(function() {
+					        			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
+					  				  }).show();
+
+											try {
+												$container.isotope({
+													filter	: selector,
+													animationOptions: {
+														duration: 750,
+														easing	: 'linear',
+														queue	: false,
+													}
+												});
+											} catch(err) {
+
+											}
+									return false;
+
+					});
+
+	$('.productSearch').keyup(function(){
+			// 			var searchTerm = $(".productSearch").val();
+			// 			var selector = $('.work-post').hide().filter(function() {
+   //      			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
+  	// 			  }).show();
+
+			// try {
+			// 	$container.isotope({
+			// 		filter	: selector,
+			// 		animationOptions: {
+			// 			duration: 900,
+			// 			easing	: 'linear',
+			// 			queue	: false,
+			// 		}
+			// 	});
+			// } catch(err) {
+
+			// }
+
+});
+// var searchTerm = $(".productSearch").val();
+
+
+
 
 
 	var filterItemA	= $('.productCat');
