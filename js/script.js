@@ -71,7 +71,62 @@ $(document).ready(function($) {
 			return false;
 		});
 
-					$('.searchButton').click(function(){
+$('.hiddenArticle').hide();
+$('.searchResults').hide();
+$('.articlePages').show();
+$(".articleSearch").val("");
+		$('.articleSearchButton').click(function(){
+									// htmBody.animate({scrollTop: $('.portfolio-container').position().top-70}, 'slow');
+									// $('.productCat').find('a').removeClass('active');
+									// $('.showAllClass').find('a').addClass('active');
+											// $('.col-md-6').removeClass('col-md-9');
+											var searchTerm = $(".articleSearch").val();
+											$('.articlePages').hide();
+											$('.searchResults').show();
+											$('.newsHead').hide();
+											// $('.col-md-6').removeClass('col-md-8');
+
+											$('.col-md-6').hide().filter(function() {
+					        			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
+					  				  }).show();
+
+					  				  // if($('.col-md-6').is(':visible')){
+					  				  // 	$('.col-md-6').toggleClass('col-md-9');
+					  				  // }
+					  				  // if($('.col-md-6').is(':visible')!=true){
+					  				  // 	$('.col-md-6').removeClass('col-md-9');
+					  				  // }
+					  				  //  $('.col-md-6').filter(function() {
+					        // 			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
+					  				  // }).addClass('col-md-9');
+
+					  				  // alert(searchTerm.length);
+					  				  if(searchTerm.length==0){
+					  				  	$('.hiddenArticle').hide();
+					  				  	$('.searchResults').hide();
+					  				  	$('.newsHead').show();
+					  				  	 	$('.articlePages').show();
+					  				  	 	// $('.col-md-6').removeClass('col-md-8');
+					  				  }
+
+
+											// try {
+											// 	$('.blog-side').isotope({
+											// 		filter	: selector,
+											// 		animationOptions: {
+											// 			duration: 750,
+											// 			easing	: 'linear',
+											// 			queue	: false,
+											// 		}
+											// 	});
+											// } catch(err) {
+
+											// }
+									return false;
+
+					});
+
+					$('.productSearchButton').click(function(){
 									htmBody.animate({scrollTop: $('.portfolio-container').position().top-70}, 'slow');
 									$('.productCat').find('a').removeClass('active');
 									$('.showAllClass').find('a').addClass('active');
