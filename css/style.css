@@ -848,7 +848,7 @@ overflow: hidden;
 
 .work-post-gal img {
     width: 100%;
-    -webkit-backface-visibility: hidden;
+    /*-webkit-backface-visibility: hidden;*/
 }
 
 .work-post-content {

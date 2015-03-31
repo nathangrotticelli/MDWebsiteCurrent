@@ -237,14 +237,14 @@ $(".articleSearch").val("");
 		return false;
 	});
 
-	var address = $('.addressButton');
+	// var address = $('.addressButton');
 
-	address.click(function(){
-	$(".map").toggle('slow');
-	// $(".contact-box").toggle('slow');
-		// $(".map").hide();
-		return false;
-	});
+	// address.click(function(){
+	// $(".map").toggle('slow');
+	// // $(".contact-box").toggle('slow');
+	// 	// $(".map").hide();
+	// 	return false;
+	// });
 
 		var productCats = $('.productCat');
 
