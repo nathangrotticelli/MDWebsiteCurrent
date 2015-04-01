@@ -2814,7 +2814,7 @@ ul.depth {
 }
 
 .pricing-box {
-    padding: 40px 0;
+    padding: 20px 0;
     border-bottom: 1px solid #e1e1e1;
     margin-bottom: 50px;
 }
@@ -2835,28 +2835,29 @@ ul.pricing-table:hover {
 ul.pricing-table li {
     width: 100%;
     text-align: center;
-    padding: 15px 0;
+    padding: 10px 0;
     border: 1px solid #dbdbdb;
     border-top: none;
     background: #fff;
 }
 
 ul.pricing-table li:first-child {
-    padding: 35px 0;
+    padding: 15px 0;
     border: none;
     background: #0076f9;
 }
 
 ul.pricing-table li p {
     color: #555555;
-    font-size: 15px;
+
+    font-size: 20px;
     font-family: 'Open Sans', sans-serif;
 }
 
 ul.pricing-table li:first-child p {
     color: #fff;
-    font-size: 24px;
-    font-weight: 700;
+    font-size: 28px;
+    /*font-weight: 700;*/
     line-height: 28px;
 }
 
@@ -2869,18 +2870,21 @@ ul.pricing-table li:first-child span {
 }
 
 ul.pricing-table li a {
-    display: inline-block;
-    color: #fff;
-    font-size: 16px;
+     /*top: 100px!important;*/
+     line-height: 1.2;
+       /*margin:0!important;*/
+    /*display: inline-block;*/
+    color: #0076f9;
+       font-size: 20px;
     font-family: 'Open Sans', sans-serif;
-    font-weight: 700;
-    padding: 12px 20px;
-    background: #0076f9;
+    /*font-weight: 700;*/
+    /*padding: 12px 20px;*/
+    /*background: #0076f9;*/
     text-decoration: none;
-    border-radius: 8px;
-    -webkit-border-radius: 8px;
-    -moz-border-radius: 8px;
-    -o-border-radius: 8px;
+    /*border-radius: 8px;*/
+    /*-webkit-border-radius: 8px;*/
+    /*-moz-border-radius: 8px;*/
+    /*-o-border-radius: 8px;*/
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
@@ -2888,7 +2892,7 @@ ul.pricing-table li a {
 }
 
 ul.pricing-table li a:hover {
-    opacity: 0.8;
+    opacity: 0.7;
 }
 
 .pricing-table.standard li {
@@ -3195,9 +3199,62 @@ ul.popular-product li span {
 /* =  Single project page
 /*-------------------------------------------------*/
 
+.docLink {
+    margin-top: 1%;
+    margin-bottom: -3.5%;
+    margin-left: 0%;
+
+    /*display: inline!important;*/
+    /*border: 2px solid black;*/
+    /*height: 100px;*/
+}
+.manualLink{
+    /*float: left!important;*/
+    margin-left: 14%;
+       /*display: inline!important;*/
+    /*margin-top: 1.5%;*/
+    /*margin-bottom: -2.7%!important;*/
+    /*margin-left: 0%;*/
+    /*display: inline!important;*/
+    /*border: 2px solid black;*/
+    /*height: 100px;*/
+}
+.docLink .services-post{
+    float: left;
+}
+.docLink .services-post h2{
+
+     /*display: inline!important;*/
+    font-size: 27px;
+    /*padding-top: 1.45%;*/
+        margin-top: 12%;
+    /*padding-right: 10%;*/
+    /*float: left;*/
+    white-space: nowrap;
+    /*margin-left: 10px;*/
+}
+.docLinkIcon{
+    /*margin-right: 10%;*/
+     /*display: inline!important;*/
+    color:black!important;
+    font-size: 29px!important;
+}
+.docLinkIconBack{
+    margin-right: 12%;
+    padding-left: 2%;
+     /*display: inline!important;*/
+    /*border-radius: 0!important;*/
+    background-color: white!important;
+        /*height: 0px!important;*/
+    /*width:0px!important;*/
+}
+
 .single-project-content {
     margin-bottom: 40px;
      width: 100%;
+}
+.singleProductList{
+    font-size: 16px;
 }
 .singleProductImg{
     /*margin: auto;*/
@@ -3227,7 +3284,7 @@ margin-bottom: 20px;
 }
 .single-project-content p {
     color:black;
-    font-size: 15px;
+    font-size: 17px;
 }
 .single-project-content h2 {
     font-weight: 300;
