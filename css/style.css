@@ -250,10 +250,10 @@ ul.drop-down {
     -ms-transform: rotateX(-90deg);
     -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
-    -webkit-transition: -webkit-transform 0.4s, opacity 0.1s 0.3s;
-    -moz-transition: -moz-transform 0.4s, opacity 0.1s 0.3s;
-    -mos-transition: -mos-transform 0.4s, opacity 0.1s 0.3s;
-    -o-transition: -o-transform 0.4s, opacity 0.1s 0.3s;
+    -webkit-transition: -webkit-transform 0.4s;
+    -moz-transition: -moz-transform 0.4s;
+    -mos-transition: -mos-transform 0.4s;
+    -o-transition: -o-transform 0.4s;
 }
 
 .navbar-default .navbar-nav > li:hover > ul.drop-down {
