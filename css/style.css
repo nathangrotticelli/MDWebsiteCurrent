@@ -113,6 +113,10 @@ header.active .top-line {
     display: inline-block;
     padding: 0 10px;
 }
+nav li{
+    text-decoration: none!important;
+    border:none!important;
+}
 
 ul.social-icons {
     float: right;
@@ -208,8 +212,8 @@ header.active .navbar-brand {
 }
 
 .navbar-default .navbar-nav > li > a.active {
-    /*color: #0077f9;*/
-    /*border-top: 5px solid #0077f9;*/
+    color: #0077f9;
+    border-top: 5px solid #0077f9;
 }
 
 .navbar-default .navbar-nav > li > a:hover {
