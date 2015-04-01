@@ -3886,9 +3886,14 @@ p.work-time span {
     .filter li a{
         font-size: 17.5px!important;
     }
-    .showAllClass img{
+
+    .filter li img{
         padding-left: 15%;
         padding-right: 15%;
+    }
+      .showAllClass img{
+        padding-left: 25%!important;
+        padding-right: 25%!important;
     }
     .single-project-page{
         padding: 5%;
@@ -3904,10 +3909,14 @@ p.work-time span {
        /*-right:-5px!important;*/
     }
 }
-@media (min-width: 600px) and (max-width: 970px) {
- .showAllClass img{
+@media (min-width: 600px) and (max-width: 1000px) {
+ .filter li img{
         padding-left: 25%;
         padding-right: 25%;
+    }
+     .showAllClass img{
+        padding-left: 35%!important;
+        padding-right: 35%!important;
     }
 }
 
