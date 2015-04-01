@@ -235,11 +235,11 @@ ul.drop-down {
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
     -o-transition: all 0.17s ease-in-out;
-    -webkit-backface-visibility: hidden;
+  /*  -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     -ms-backface-visibility: hidden;
-    backface-visibility: hidden;
+    backface-visibility: hidden;*/
     -webkit-transform-origin: 0 0;
     -moz-transform-origin: 0 0;
     -ms-transform-origin: 0 0;
@@ -250,10 +250,10 @@ ul.drop-down {
     -ms-transform: rotateX(-90deg);
     -o-transform: rotateX(-90deg);
     transform: rotateX(-90deg);
-    -webkit-transition: -webkit-transform 0.4s;
+  /*  -webkit-transition: -webkit-transform 0.4s;
     -moz-transition: -moz-transform 0.4s;
     -mos-transition: -mos-transform 0.4s;
-    -o-transition: -o-transform 0.4s;
+    -o-transition: -o-transform 0.4s;*/
 }
 
 .navbar-default .navbar-nav > li:hover > ul.drop-down {
@@ -264,11 +264,11 @@ ul.drop-down {
       -ms-transform: rotateX(0deg);
       -o-transform: rotateX(0deg);
       transform: rotateX(0deg);
-      -webkit-transition: -webkit-transform 0.4s;
+   /*   -webkit-transition: -webkit-transform 0.4s;
       -moz-transition: -moz-transform 0.4s;
       -mos-transition: -mos-transform 0.4s;
       -o-transition: -o-transform 0.4s;
-      transition: transform 0.4s;
+      transition: transform 0.4s;*/
 }
 
 ul.drop-down li a {
@@ -283,10 +283,10 @@ ul.drop-down li a {
     font-weight: 300;
     opacity: 1;
     border-top: 1px solid rgba(0,0,0,0.3);
-    transition: all 0.17s ease-in-out;
+/*    transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
-    -o-transition: all 0.17s ease-in-out;
+    -o-transition: all 0.17s ease-in-out;*/
 }
 
 ul.drop-down li {
