@@ -229,7 +229,7 @@ ul.drop-down {
     left: 0;
     width: 150px;
     visibility: hidden;
-    opacity: 1;
+    opacity: 0;
     z-index: 99;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
@@ -273,7 +273,7 @@ ul.drop-down {
 
 ul.drop-down li a {
     display: block;
-    color: #fff;
+    color: #fff!important;
     font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     padding: 10px 12px;
@@ -311,11 +311,11 @@ ul.drop-down li:hover ul.drop-down.level3 {
       -ms-transform: rotateY(0deg);
       -o-transform: rotateY(0deg);
       transform: rotateY(0deg);
-      -webkit-transition: -webkit-transform 0.4s, opacity 0.1s;
-      -moz-transition: -moz-transform 0.4s, opacity 0.1s;
-      -mos-transition: -mos-transform 0.4s, opacity 0.1s;
-      -o-transition: -o-transform 0.4s, opacity 0.1s;
-      transition: transform 0.4s, opacity 0.1s;
+      -webkit-transition: -webkit-transform 0.4s;
+      -moz-transition: -moz-transform 0.4s;
+      -mos-transition: -mos-transform 0.4s;
+      -o-transition: -o-transform 0.4s;
+      transition: transform 0.4s;
 }
 
 ul.drop-down li:first-child a {
