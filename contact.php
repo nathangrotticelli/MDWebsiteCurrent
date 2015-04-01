@@ -71,7 +71,7 @@ require 'PHPMailer-master/PHPMailerAutoload.php';
 			$mail->SetFrom("multidyneresponder@gmail.com",$name);
 			$mail->AddReplyTo($mail2, $name);
 
-			$mail->AddAddress("nathangrotticelli@gmail.com");
+			$mail->AddAddress("sales@multidyne.com");
 
 			$mail->Subject  = "New MultiDyne Website Contact Submission";
 			// $mail->WordWrap = 60;
