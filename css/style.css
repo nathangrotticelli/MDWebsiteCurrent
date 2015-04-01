@@ -228,9 +228,9 @@ ul.drop-down {
     top: 100%;
     left: 0;
     width: 150px;
-    visibility: hidden\0/;
-    opacity: 0;
-    z-index: 3;
+    /*visibility: hidden\0/;*/
+    /*opacity: 0;*/
+    z-index: 99;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
     -webkit-transition: all 0.17s ease-in-out;
@@ -3927,6 +3927,6 @@ p.work-time span {
 }
 @media (min-height: 1100px){
     .aboutGoTop{
-        display: none;
+        display: none!important;
     }
 }
