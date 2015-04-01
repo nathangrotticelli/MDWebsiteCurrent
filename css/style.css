@@ -114,9 +114,7 @@ header.active .top-line {
     padding: 0 10px;
 }
 .navbar-nav a{
-    outline: none!important;
-    text-decoration: none!important;
-    border:none!important;
+    outline: none;
 }
 
 ul.social-icons {
