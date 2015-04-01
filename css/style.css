@@ -208,8 +208,8 @@ header.active .navbar-brand {
 }
 
 .navbar-default .navbar-nav > li > a.active {
-    color: #0077f9;
-    border-top: 5px solid #0077f9;
+    /*color: #0077f9;*/
+    /*border-top: 5px solid #0077f9;*/
 }
 
 .navbar-default .navbar-nav > li > a:hover {
