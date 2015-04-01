@@ -80,21 +80,27 @@ $(".articleSearch").val("");
 									// $('.productCat').find('a').removeClass('active');
 									// $('.showAllClass').find('a').addClass('active');
 											// $('.col-md-6').removeClass('col-md-9');
-											var searchTerm = $(".articleSearch").val();
+
+
+						var searchTerm = $(".articleSearch").val();
+						 $('.col-md-6').hide().filter(function() {
+					        			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
+					  				  }).show();
+
 											if(searchTerm.length==0){
 					  				  	$('.hiddenArticle').hide();
 					  				  	$('.searchResults').hide();
 					  				  	$('.newsHead').show();
 					  				  	$('.articlePages').show();
 					  				  }else{
-					  				  	htmBody.animate({scrollTop: 0}, 'slow');
+					  				  	// $('.hiddenArticle').show();
+					  				  	htmBody.animate({scrollTop: 0});
 												$('.articlePages').hide();
 												$('.searchResults').show();
 												$('.newsHead').hide();
 					  				  }
-					  				  $('.col-md-6').hide().filter(function() {
-					        			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
-					  				  }).show();
+
+
 
 
 
