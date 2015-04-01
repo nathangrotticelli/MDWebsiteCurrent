@@ -21,12 +21,10 @@
 .fullwidthbanner{
     max-height: 470px!important;
 }
-.fullwidthbanner img{
-    /*max-height: 330px!important;*/
-    /*width: 100%!important;*/
-    /*height: 50%;*/
-    /*max-height: 550px!important;*/
-}
+.showAllClass img{
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 /*-------------------------------------------------------*/
 /* 1. Isotope filtering
 /*-------------------------------------------------------*/
@@ -2736,10 +2734,17 @@ ul.depth {
 /*-------------------------------------------------*/
 .aboutPic2{
     float: left!important;
-     margin-right:25px!important;
-     margin-left: 2.5px!important;
+     margin-right:35px!important;
+     margin-left: 0px!important;
     margin-top: 3px;
     /*margin-right: 2.5px;*/
+}
+.aboutUsSection{
+   padding-right:1%!important;
+}
+.aboutUsPic{
+   margin-right:-1%!important;
+   /*-right:-5px!important;*/
 }
 .about-us-text img {
     float: left;
@@ -3838,4 +3843,51 @@ p.work-time span {
 
 .slider-caption .flex-control-nav {
     bottom: -80px;
+}
+@media (max-width: 970px) {
+    .map {
+        display: none;
+    }
+    .page-tree li a[style]{
+        border-bottom: none!important;
+        /*text-decoration: underline;*/
+    }
+    .single-post-content > img {
+        width: 100%!important;
+        margin-bottom: 15px;
+    }
+    .partners{
+        display: none;
+    }
+    .filter li a{
+        font-size: 17.5px!important;
+    }
+    .showAllClass img{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .single-project-page{
+        padding: 5%;
+        padding-top: 0;
+    }
+    .aboutUsSection{
+        padding-top: 0!important;
+        margin-top: 0!important;
+       padding-right:0%!important;
+    }
+    .aboutUsPic{
+       margin-right:0%!important;
+       /*-right:-5px!important;*/
+    }
+}
+@media (min-width: 600px) and (max-width: 970px) {
+ .showAllClass img{
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+}
+@media (min-width: 970px) and (max-width: 1200px) {
+      .filter li a{
+        font-size: 12px!important;
+    }
 }

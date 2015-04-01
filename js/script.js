@@ -81,14 +81,23 @@ $(".articleSearch").val("");
 									// $('.showAllClass').find('a').addClass('active');
 											// $('.col-md-6').removeClass('col-md-9');
 											var searchTerm = $(".articleSearch").val();
-											$('.articlePages').hide();
-											$('.searchResults').show();
-											$('.newsHead').hide();
-											// $('.col-md-6').removeClass('col-md-8');
-
-											$('.col-md-6').hide().filter(function() {
+											if(searchTerm.length==0){
+					  				  	$('.hiddenArticle').hide();
+					  				  	$('.searchResults').hide();
+					  				  	$('.newsHead').show();
+					  				  	$('.articlePages').show();
+					  				  }else{
+					  				  	htmBody.animate({scrollTop: 0}, 'slow');
+												$('.articlePages').hide();
+												$('.searchResults').show();
+												$('.newsHead').hide();
+					  				  }
+					  				  $('.col-md-6').hide().filter(function() {
 					        			return $(this).text().toLowerCase().indexOf( searchTerm.toLowerCase()  ) > -1;
 					  				  }).show();
+
+
+
 
 					  				  // if($('.col-md-6').is(':visible')){
 					  				  // 	$('.col-md-6').toggleClass('col-md-9');
@@ -101,13 +110,7 @@ $(".articleSearch").val("");
 					  				  // }).addClass('col-md-9');
 
 					  				  // alert(searchTerm.length);
-					  				  if(searchTerm.length==0){
-					  				  	$('.hiddenArticle').hide();
-					  				  	$('.searchResults').hide();
-					  				  	$('.newsHead').show();
-					  				  	 	$('.articlePages').show();
-					  				  	 	// $('.col-md-6').removeClass('col-md-8');
-					  				  }
+
 
 
 											// try {
@@ -186,6 +189,10 @@ $(".articleSearch").val("");
 				filterItemA.find('a').removeClass('active');
 				$this.find('a').addClass('active');
 			}
+		});
+
+		$('.supportTab').click(function(){
+			return false;
 		});
 
 	/*-------------------------------------------------*/
