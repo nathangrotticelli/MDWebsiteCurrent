@@ -63,7 +63,7 @@
     -webkit-box-shadow: none;
     -moz-box-shadow: none;
     -o-box-shadow: none;
-    border: none !important;
+    border: none!important;
     border-radius: 0;
     transition: all 0.17s ease-in-out;
     -moz-transition: all 0.17s ease-in-out;
@@ -113,7 +113,8 @@ header.active .top-line {
     display: inline-block;
     padding: 0 10px;
 }
-nav li{
+nav li a{
+    outline: none!important;
     text-decoration: none!important;
     border:none!important;
 }
