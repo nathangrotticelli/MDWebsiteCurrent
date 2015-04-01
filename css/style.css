@@ -3213,6 +3213,13 @@ ul.popular-product li span {
     /*border: 2px solid black;*/
     /*height: 100px;*/
 }
+ .docLink .services-post{
+        float: left;
+    }
+     .docLinkIconBack{
+    /*margin-right: 12%;*/
+        padding-left: 2%;
+    }
 .manualLink{
     /*float: left!important;*/
     margin-left: 14%;
@@ -3223,9 +3230,6 @@ ul.popular-product li span {
     /*display: inline!important;*/
     /*border: 2px solid black;*/
     /*height: 100px;*/
-}
-.docLink .services-post{
-    float: left;
 }
 .docLink .services-post h2{
 
@@ -3246,7 +3250,7 @@ ul.popular-product li span {
 }
 .docLinkIconBack{
     margin-right: 12%;
-    padding-left: 2%;
+    /*padding-left: 2%;*/
      /*display: inline!important;*/
     /*border-radius: 0!important;*/
     background-color: white!important;
@@ -3845,6 +3849,23 @@ p.work-time span {
     bottom: -80px;
 }
 @media (max-width: 970px) {
+    .page-banner {
+        padding: 10px 0;
+    /*background: url('../upload/banner1.jpg');*/
+    /*overflow: hidden;*/
+    /*background-color: #007aff;*/
+        padding-bottom: 20px;
+    }
+    .docLink .services-post{
+        /*float: left;*/
+        margin-top: 4%;
+        clear:both;
+        /*display: block!important;*/
+    }
+    .manualLink{
+        /*margin-top:-20%;*/
+        margin-left: 1%;
+    }
     .map {
         display: none;
     }
@@ -3886,8 +3907,12 @@ p.work-time span {
         padding-right: 25%;
     }
 }
+
 @media (min-width: 970px) and (max-width: 1200px) {
       .filter li a{
         font-size: 12px!important;
     }
+}
+@media (min-width: 970px){
+
 }
