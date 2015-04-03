@@ -3851,7 +3851,24 @@ p.work-time span {
 .slider-caption .flex-control-nav {
     bottom: -80px;
 }
+.borderRight{
+        border-right:1px solid gray;
+    }
+    .mainTagLine{
+        margin-top:3%!important;
+        font-size:25px!important;
+        color:black!important;
+    }
 @media (max-width: 970px) {
+     .mainTagLine{
+        margin-top:7.5%!important;
+        font-size:25px!important;
+        color:black!important;
+    }
+    .borderRight{
+        border-right:none;
+        margin-bottom: 25px;
+    }
     .page-banner {
         padding: 10px 0;
     /*background: url('../upload/banner1.jpg');*/
@@ -3926,6 +3943,7 @@ p.work-time span {
     }
 }
 @media (min-height: 1100px){
+
     .aboutGoTop{
         display: none!important;
     }
