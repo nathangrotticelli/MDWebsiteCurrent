@@ -71,6 +71,13 @@ $(document).ready(function($) {
 			return false;
 		});
 
+// var numitems =  $(".pricing-table li").length;
+// $(".pricing-table").css("column-count",2);
+$(".pricing-table li").click(function(){
+   window.location=$(this).find("a").attr("href");
+   return false;
+});
+
 $('.hiddenArticle').hide();
 $('.searchResults').hide();
 $('.articlePages').show();
